@@ -1,0 +1,101 @@
+
+<style>
+  .wrap { padding: 1rem 0; font-family: var(--font-sans); }
+  .section-title { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.06em; margin: 1.5rem 0 0.75rem; }
+  .tip-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 10px; display: flex; gap: 12px; align-items: flex-start; }
+  .tip-icon { font-size: 18px; line-height: 1; flex-shrink: 0; margin-top: 2px; }
+  .tip-label { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 3px; }
+  .tip-desc { font-size: 13px; color: var(--color-text-secondary); margin: 0; line-height: 1.5; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; margin-left: 6px; }
+  .badge-hot { background: #FAECE7; color: #993C1D; }
+  .badge-key { background: #E1F5EE; color: #0F6E56; }
+  .tip-compare { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 8px 12px; margin-top: 8px; font-size: 12px; color: var(--color-text-secondary); }
+  .tip-compare span.bad { color: #A32D2D; }
+  .tip-compare span.good { color: #0F6E56; }
+  .arrow { color: var(--color-text-tertiary); margin: 0 4px; }
+</style>
+<div class="wrap">
+  <div class="section-title">Kenapa token cepat habis?</div>
+
+  <div class="tip-card">
+    <div class="tip-icon">🔁</div>
+    <div>
+      <p class="tip-label">Claude membaca ulang seluruh percakapan setiap pesan</p>
+      <p class="tip-desc">Setiap kali kamu kirim pesan baru, Claude baca dari awal semua chat. Makin panjang percakapan = makin boros. Ini alasan utama token cepat habis.</p>
+    </div>
+  </div>
+
+  <div class="tip-card">
+    <div class="tip-icon">🏗️</div>
+    <div>
+      <p class="tip-label">Buat file di Cowork jauh lebih boros dari sekedar chat</p>
+      <p class="tip-desc">Membuat dokumen Word, Excel, PowerPoint lewat Cowork menggunakan token jauh lebih banyak daripada sekadar bertanya di Chat biasa.</p>
+    </div>
+  </div>
+
+  <div class="section-title">Tips hemat — khusus pengguna Cowork</div>
+
+  <div class="tip-card">
+    <div class="tip-icon">📋</div>
+    <div>
+      <p class="tip-label">Rencanakan dulu di Chat, baru buat di Cowork <span class="badge badge-hot">Paling penting</span></p>
+      <p class="tip-desc">Diskusikan struktur, bagian, dan isi dokumen di Chat biasa dulu. Setelah yakin apa yang kamu mau, baru buka Cowork dan bilang "Buat file ini sesuai rencana tadi."</p>
+      <div class="tip-compare">
+        <span class="bad">✗ Buka Cowork → "Buatkan saya laporan keuangan"</span><br>
+        <span class="good">✓ Chat dulu → sepakati isinya → Cowork → "Buat file ini persis seperti yang kita bahas"</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-card">
+    <div class="tip-icon">✏️</div>
+    <div>
+      <p class="tip-label">Edit prompt lama, jangan kirim pesan baru untuk koreksi</p>
+      <p class="tip-desc">Kalau hasilnya kurang tepat, klik tombol edit di pesan awalmu dan perbaiki di sana. Jangan kirim pesan tambahan seperti "ubah bagian ini" — itu memaksa Claude membaca ulang semua chat dari awal.</p>
+    </div>
+  </div>
+
+  <div class="tip-card">
+    <div class="tip-icon">💬</div>
+    <div>
+      <p class="tip-label">Buat chat baru untuk topik yang berbeda</p>
+      <p class="tip-desc">Satu topik = satu percakapan. Jangan campur semua pekerjaan dalam satu chat panjang. Chat yang panjang = Claude kerja lebih keras membaca semuanya setiap pesan.</p>
+    </div>
+  </div>
+
+  <div class="tip-card">
+    <div class="tip-icon">🎯</div>
+    <div>
+      <p class="tip-label">Prompt yang spesifik lebih hemat <span class="badge badge-key">Sering diabaikan</span></p>
+      <p class="tip-desc">Prompt samar → Claude menebak-nebak → hasilnya salah → kamu kirim lagi → boros. Prompt yang jelas dan spesifik langsung menghasilkan jawaban tepat di percobaan pertama.</p>
+      <div class="tip-compare">
+        <span class="bad">✗ "Perbaiki ini" / "Ubah tonenya"</span><br>
+        <span class="good">✓ "Tulis ulang intro ini agar terdengar lebih santai, maks 3 kalimat"</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tip-card">
+    <div class="tip-icon">⏰</div>
+    <div>
+      <p class="tip-label">Bagi sesi kerja sepanjang hari, jangan habis pagi semua</p>
+      <p class="tip-desc">Claude punya batas token per jendela 5 jam. Kalau kamu pakai semua di pagi hari, kamu harus nunggu. Bagi pekerjaan berat menjadi 2–3 sesi di waktu berbeda.</p>
+    </div>
+  </div>
+
+  <div class="tip-card">
+    <div class="tip-icon">📝</div>
+    <div>
+      <p class="tip-label">Upload file sebagai teks/markdown, bukan PDF besar</p>
+      <p class="tip-desc">Saat mau upload dokumen ke Claude, copy teksnya lalu simpan sebagai file .md (markdown) atau .txt. File teks jauh lebih ringan dibaca Claude dibanding PDF.</p>
+    </div>
+  </div>
+
+  <div class="tip-card">
+    <div class="tip-icon">🚫</div>
+    <div>
+      <p class="tip-label">Jangan minta "buat ulang semua" — minta edit bagian tertentu</p>
+      <p class="tip-desc">Kalau ada satu bagian yang kurang, jangan minta Claude menulis ulang seluruh dokumen. Tunjuk bagian mana yang perlu diubah secara spesifik.</p>
+    </div>
+  </div>
+</div>
